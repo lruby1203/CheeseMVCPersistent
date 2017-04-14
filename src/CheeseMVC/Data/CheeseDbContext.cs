@@ -1,5 +1,7 @@
 ﻿using CheeseMVC.Models;
 using Microsoft.EntityFrameworkCore;
+using System.Collections.Generic;
+
 
 namespace CheeseMVC.Data
 {
@@ -18,7 +20,7 @@ namespace CheeseMVC.Data
         { }
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
-            modelBuilder.Entity<CheeseMenu>().HasKey(c => new object { c.CheeseID, c.MenuID });
+            modelBuilder.Entity<CheeseMenu>().HasKey(c => new { c.CheeseID, c.MenuID });
         }
     }
 }

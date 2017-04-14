@@ -5,6 +5,7 @@ using System.Threading.Tasks;
 using System.ComponentModel.DataAnnotations;
 
 
+
 namespace CheeseMVC.ViewModels
 {
     public class AddMenuViewModel
@@ -13,6 +14,6 @@ namespace CheeseMVC.ViewModels
         [Display(Name = "Menu Name")]
         public string Name { get; set; }
 
-        @{ViewBag.Title = "New Menu";}
+        
     }
 }

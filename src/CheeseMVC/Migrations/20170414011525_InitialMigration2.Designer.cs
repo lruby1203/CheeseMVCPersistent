@@ -8,9 +8,10 @@ using CheeseMVC.Data;
 namespace CheeseMVC.Migrations
 {
     [DbContext(typeof(CheeseDbContext))]
-    partial class CheeseDbContextModelSnapshot : ModelSnapshot
+    [Migration("20170414011525_InitialMigration2")]
+    partial class InitialMigration2
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
             modelBuilder
                 .HasAnnotation("ProductVersion", "1.0.1")
